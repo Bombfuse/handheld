@@ -1,0 +1,14 @@
+[package]
+name = "launcher"
+version = "0.1.0"
+edition = "2024"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+handheld-sdk = { path = "../../sdk" }
+
+[profile.release]
+lto = true
+opt-level = "z"

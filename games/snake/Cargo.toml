@@ -1,0 +1,17 @@
+[package]
+name = "snake"
+version = "0.1.0"
+edition = "2024"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+handheld-sdk = { path = "../../sdk" }
+
+[profile.release]
+lto = true
+codegen-units = 1
+opt-level = "z"
+panic = "abort"
+overflow-checks = false

@@ -1,0 +1,11 @@
+[package]
+name = "host-runner"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+wasmtime = "31"
+minifb = "0.28"
+anyhow = "1"
+cpal = "0.15"
+handheld-cart = { path = "../../libs/cart", features = ["std"] }

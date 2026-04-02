@@ -1,0 +1,11 @@
+[workspace]
+resolver = "2"
+members = [
+    "sdk",
+    "libs/cart",
+    "sim/host-runner",
+    "tools/cart-packer",
+    "games/hello",
+    "games/snake",
+    "games/launcher",
+]
